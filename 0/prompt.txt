@@ -1,0 +1,17 @@
+can we fully re construct this Ui? fluid animtation, gemini style chatbot home screen on landing and the rest of the tabs cleanly tiled in the sidebar as icons with their names on it, collapsible to icons only? Keep the endpoints and other logic the same, full UI enhancement, beautify it completely but cut out the AI slop, no glowy icons, no weird buttons, clean modern and minimal U
+
+---
+
+go ahead, implement this idea, stick to it, make sure the collapsible side panels for the rest of the options are there, clean fluid animtations, design language as planned and stick to the idea you've desgined
+
+---
+
+[Image #1] clean it up, the sidebar is still a little weird top half is cut off, sidebar is just weird and unevenly spaced when expanded, button descriptions linger too long when hovered and released, recommended messages below the chatbot is weird as well, so clean that up too, also make the UI itself more modern looking, it looks a little old fashioned, the textbox itself can be rounded too around the corners
+
+---
+
+change that intro line "what would you likw to understand" to "Atlas Mind" keep it polished clean and evenly spaced [Image #1]
+
+---
+
+the suggested prompts are still weirdly hanging, figure something out to put them in theme matched boxes or containers while keeping it all minimal and clean, looks very janky and absurd now: [Image #1]
