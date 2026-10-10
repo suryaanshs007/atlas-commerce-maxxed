@@ -1,0 +1,50 @@
+{
+  "cli_version": "0.11.4",
+  "checkpoint_id": "01M4KGKDHPYP7AFRB3096HNS6Q",
+  "strategy": "manual-commit",
+  "branch": "main",
+  "checkpoints_count": 14,
+  "files_touched": [
+    "BUILD_PLAN.md",
+    "DEMO_AND_TESTS.md",
+    "README.md",
+    "SPRINT_PLAN.md",
+    "app.py",
+    "docs/evidence.md",
+    "pyproject.toml",
+    "src/adaptive_commerce/agents/__init__.py",
+    "src/adaptive_commerce/agents/source.py",
+    "src/adaptive_commerce/application/dashboard.py",
+    "src/adaptive_commerce/application/lifecycle.py",
+    "src/adaptive_commerce/application/operator.py",
+    "src/adaptive_commerce/application/worker.py",
+    "src/adaptive_commerce/integrations/observability.py",
+    "src/adaptive_commerce/persistence/database.py",
+    "src/adaptive_commerce/persistence/repository.py",
+    "src/adaptive_commerce/persistence/schema.py",
+    "src/adaptive_commerce/presentation/dashboard.py",
+    "tests/test_dashboard.py",
+    "tests/test_finance.py",
+    "tests/test_observability.py",
+    "tests/test_worker_lifecycle.py",
+    "uv.lock",
+    "worker.py"
+  ],
+  "sessions": [
+    {
+      "metadata": "/0/metadata.json",
+      "transcript": "/0/full.jsonl",
+      "compact_transcript": "/0/transcript.jsonl",
+      "content_hash": "/0/content_hash.txt",
+      "prompt": "/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 600611,
+    "cache_creation_tokens": 0,
+    "cache_read_tokens": 24130048,
+    "output_tokens": 140107,
+    "api_call_count": 245,
+    "subagent_tokens_complete": true
+  }
+}
