@@ -1,0 +1,43 @@
+{
+  "cli_version": "0.11.4",
+  "checkpoint_id": "01M4KN058F9X79GG8Y68DE5J4Z",
+  "strategy": "manual-commit",
+  "branch": "main",
+  "checkpoints_count": 7,
+  "files_touched": [
+    ".env.example",
+    "INTEGRATIONS.md",
+    "README.md",
+    "docs/evidence.md",
+    "pyproject.toml",
+    "src/adaptive_commerce/application/assistant.py",
+    "src/adaptive_commerce/application/operator.py",
+    "src/adaptive_commerce/application/worker.py",
+    "src/adaptive_commerce/integrations/llm.py",
+    "src/adaptive_commerce/integrations/observability.py",
+    "src/adaptive_commerce/integrations/trace_readback.py",
+    "src/adaptive_commerce/persistence/schema.py",
+    "src/adaptive_commerce/presentation/dashboard.py",
+    "tests/conftest.py",
+    "tests/test_assistant.py",
+    "tests/test_trace_readback.py",
+    "uv.lock"
+  ],
+  "sessions": [
+    {
+      "metadata": "/0/metadata.json",
+      "transcript": "/0/full.jsonl",
+      "compact_transcript": "/0/transcript.jsonl",
+      "content_hash": "/0/content_hash.txt",
+      "prompt": "/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 372426,
+    "cache_creation_tokens": 0,
+    "cache_read_tokens": 14859008,
+    "output_tokens": 73574,
+    "api_call_count": 135,
+    "subagent_tokens_complete": true
+  }
+}
