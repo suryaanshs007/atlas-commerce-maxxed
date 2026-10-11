@@ -1,0 +1,91 @@
+push the changes to main please, add a detailed commit message concisely describing the changes you've made for this latest one and let entire track it when prompted
+
+---
+
+okay so this is a forked repo, i need to merge it with origin main of the parent repo, but it will cause several merge conflicts because there are many commit differences: [Image #1] what do i do?
+
+---
+
+do you know what the latest commit on the parent repo's main is? It's some "enhance UI thing" from arshi, so it is both ahead and behind compared to mine
+
+---
+
+so how do i merge this safely now with parent main
+
+---
+
+can you do all this for me? Make sure it's all safe and properly merged with main of the parent and resolve conflicts yourself becaus you have full context of the codebase and you know what's working, so keep it stable
+
+---
+
+now it'll merge the PR with no conflicts?
+
+---
+
+## Sprint task
+
+- Sprint number: Beyond 4
+- Task owner (Z / Ar / Ad / S): S
+- Task title from `SPRINT_PLAN.md`: Beyond the sprint plan
+- Task branch: Adding a full orchestrator agentic layer
+
+## Change
+
+Describe the user-visible or system behavior added or changed.
+
+## Contributor checklist
+
+- [ ] I pushed this task branch to GitHub and linked this PR to the assigned sprint task.
+- [ ] I implemented the task acceptance criteria; no placeholder path is presented as a working integration.
+- [ ] I ran the required focused tests and they passed.
+- [ ] I included test commands and results below.
+- [ ] I included relevant UI screenshots, neatlogs trace IDs, cfo.ai scenario references, or Entire checkpoint references.
+- [ ] I documented any blocked integration as degraded and stated the evidence needed to unblock it.
+- [ ] I checked that no secret, local environment file, or private data is included.
+
+## Tests and evidence
+
+```text
+Commands:
+Results:
+neatlogs trace/evaluation:
+Entire checkpoint/graph:
+cfo.ai model/scenario:
+```
+
+## Reviewer checklist (S or assigned reviewer)
+
+- [ ] Required checks pass on GitHub.
+- [ ] Acceptance criteria and test evidence match the sprint task.
+- [ ] Integration claims are backed by real evidence or clearly marked degraded.
+- [ ] Reviewed and merged to `main`.
+ fill this up
+
+---
+
+Audit findings
+1. High — assistant writes are not consistently checked against the user’s intent.  
+assistant.py:160–196 exposes write tools based on keyword matching. For example, “Don’t run the regional cycle” still matches run_region_cycle, and “Don’t remove this signal” still exposes remove_pending_signal. At assistant.py:332–350, the requested tool call is executed without rechecking the user’s intent; only some actions, such as lifecycle and catalog changes, get a second check. If the model calls a tool despite the negation, it can consume signals, change recommendations, or remove a pending signal. The safety rule currently depends on the model following the prompt rather than an enforced application check.
+2. Medium — saved-version comparisons omit active event boosts.  
+comparison.py:42–69 loads the products and ranking policy, but not active event windows. The worker and recommendation preview do pass active events to rank_products(). During an active event, the comparison can therefore disagree with the actual ranking for those versions.
+Verification and integration status
+- The worktree is clean at 3d68715, matching origin/main; git diff --check passed.
+- I could not verify the test suite here: uv run pytest -q timed out after two minutes, and the available Python 3.12 environment lacks python-dotenv, so pytest collection fails. This is an environment limitation, not a test failure result.
+- The repository documents cfo.ai as degraded/unverified and notes missing Entire graph/checkpoint evidence. Those remain integration acceptance gaps, not newly discovered runtime bugs.
+Scope note: I traced the main assistant, worker, persistence, ranking, lifecycle, finance, and dashboard paths, but did not read every test or every UI/style detail. The main risk is the assistant’s unenforced intent boundary; no files were changed.
+
+---
+
+how do i test these features in the dashboard? any prompts for the agent or things i need to do to see it function?
+
+---
+
+[Image #1] [Image #2] [Image #3] [Image #4]
+
+---
+
+[Image #1] [Image #2] retried the prompt, this is fine?
+
+---
+
+[Image #1] this is some of the juding criteria for the hackathon, how can we improve the agent for this? what's the best way to do it and can we integrate sub agent deployment into this?
